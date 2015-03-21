@@ -1,0 +1,6 @@
+<button ng-click="addData()">add</button>
+<button ng-click="removeAll()">remove all</button>
+
+<div ng-repeat="item in dataReference">
+  <button ng-click="remove(item.key())">remove</button> {{ item.val().data.leucocytes.reaction }}
+</div>
