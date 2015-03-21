@@ -14,7 +14,7 @@ angular.module('starter').service('dataReferenceManagementService', [function() 
   };
 
   this.removeById = function(id) {
-    dataReferenceBase.on('value', function(snapshot, cn) {
+    dataReferenceBase.on('value', function(snapshot) {
       var childToRemove = snapshot.child(id);
 
       if (childToRemove != null) {

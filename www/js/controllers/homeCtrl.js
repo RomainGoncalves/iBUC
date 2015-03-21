@@ -6,8 +6,8 @@ angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', '
 
   $scope.dataReference = [];
 
-  dataReferenceManagementService.getReference().on('child_added', function(snapshot, cn) {
-    $scope.dataReference.push(snapshot.val().data.leucocytes);
+  dataReferenceManagementService.getReference().on('child_added', function(snapshot) {
+    $scope.dataReference.push(snapshot.val());
   });
 
   dataReferenceManagementService.getReference().on('child_removed', function(snapshot) {

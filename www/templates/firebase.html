@@ -1,6 +1,9 @@
-<button ng-click="addData()">add</button>
+<div ng-repeat="item in fakeCases">
+  <button ng-click="addData($index)">add fake case {{ $index }}</button>
+</div>
+
 <button ng-click="removeAll()">remove all</button>
 
 <div ng-repeat="item in dataReference">
-  <button ng-click="remove(item.key())">remove</button> {{ item.val().data.leucocytes.reaction }}
+  <button ng-click="remove(item.key())">remove</button> {{ item.val() }}
 </div>
