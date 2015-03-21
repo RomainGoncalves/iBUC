@@ -1,53 +1,34 @@
+body {
+  padding-top: 40px; }
 
+.status-image {
+  opacity: 0.6; }
 
-/* Empty. Add your own CSS if you like */
+.pading-head-title {
+  padding-top: 30px; }
 
-.pading-status{
-  position: absolute;
-  top: 95px;
-  left: 100px;
-  color:white;
-}
+.small-padding-bottom {
+  padding-bottom: 50px; }
 
-.status-image{
-  opacity: 0.6;
-}
+.item-header-color {
+  /*  border-top-right-radius: 10px;
+   border-top-left-radius: 10px;*/
+  background-color: #1C8B6E; }
 
-.pading-head-title{
-  padding-top: 30px;
-}
+.item-title-color {
+  color: white; }
 
-.small-padding-bottom{
-  padding-bottom: 50px;
-}
-
-.item-header-color{
-/*  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;*/
-  background-color: #1C8B6E;
-
-}
-
-.item-title-color{
-  color: white;
-}
-
-.item-title-img-padding{
-  right:0;
+.item-title-img-padding {
+  right: 0;
   position: absolute;
   top: 150px;
   height: 60px;
   z-index: 1500;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
-
-.item-body-border{
+.item-body-border {
   border-color: #1C8B6E;
-  border-width: 5px;
-}
+  border-width: 5px; }
 
-.item-body-color{
-  color: #1C8B6E;
-}
-
+.item-body-color {
+  color: #1C8B6E; }
