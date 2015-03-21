@@ -14,18 +14,21 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/lodash/lodash.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/controllers/settingsCtrl.js"></script>
+    <script src="js/services/resultsAnalysisService.js"></script>
 </head>
 <body ng-app="starter">
 <!--
   The nav bar that will be updated as we navigate between views.
 -->
-<ion-nav-bar class="bar bar-header bar-assertive" title="iBUC">
+<ion-nav-bar class="bar bar-header bar-assertive" align-title="center">
     <ion-nav-back-button>
     </ion-nav-back-button>
     <ion-nav-title>iBUC</ion-nav-title>
