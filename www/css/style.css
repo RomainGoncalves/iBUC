@@ -1,6 +1,4 @@
 
-body {
-  padding-top: 50px; }
 
 /* Empty. Add your own CSS if you like */
 
@@ -16,7 +14,7 @@ body {
 }
 
 .pading-head-title{
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .small-padding-bottom{
@@ -38,7 +36,7 @@ body {
   right:0;
   position: absolute;
   top: 150px;
-  height: 80px;
+  height: 60px;
   z-index: 1500;
   margin-top: 10px;
 }
