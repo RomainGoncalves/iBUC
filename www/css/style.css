@@ -1,2 +1,55 @@
+
 body {
   padding-top: 50px; }
+
+/* Empty. Add your own CSS if you like */
+
+.pading-status{
+  position: absolute;
+  top: 95px;
+  left: 100px;
+  color:white;
+}
+
+.status-image{
+  opacity: 0.6;
+}
+
+.pading-head-title{
+  padding-top: 60px;
+}
+
+.small-padding-bottom{
+  padding-bottom: 50px;
+}
+
+.item-header-color{
+/*  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;*/
+  background-color: #1C8B6E;
+
+}
+
+.item-title-color{
+  color: white;
+}
+
+.item-title-img-padding{
+  right:0;
+  position: absolute;
+  top: 150px;
+  height: 80px;
+  z-index: 1500;
+  margin-top: 10px;
+}
+
+
+.item-body-border{
+  border-color: #1C8B6E;
+  border-width: 5px;
+}
+
+.item-body-color{
+  color: #1C8B6E;
+}
+
