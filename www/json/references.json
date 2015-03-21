@@ -1,0 +1,46 @@
+{
+  "leucocytes": {
+    "symbol": ">",
+    "value": "10"
+  },
+  "pH":{
+    "symbol": "<",
+    "value": "5"
+  },
+  "proteins":{
+    "symbol": ">",
+    "value": "60"
+  },
+  "nitrites":{
+    "symbol": ">",
+    "value": "0.3"
+  },
+  "glucose":{
+    "symbol": ">",
+    "value": "0.4"
+  },
+  "ketoneBodies":{
+    "symbol": ">",
+    "value": "0.05"
+  },
+  "urobilinogene":{
+    "symbol": ">",
+    "value": "4"
+  },
+  "bilirubine":{
+    "symbol": ">",
+    "value": "84"
+  },
+  "erythrocytes":{
+    "symbol": ">",
+    "value": "5"
+  },
+  "hemoglobine":{
+    "symbol": ">",
+    "value": "10"
+  },
+  "urineContentration":{
+    "symbol": "=",
+    "value": ""
+  }
+}
