@@ -1,6 +1,14 @@
 body {
   padding-top: 40px; }
 
+.bar-color{
+  background-color: #1C8B6E;
+  color: white;
+}
+
+}.border-card{
+  border-width: 10px;
+}
 .status-image {
   opacity: 0.6; }
 
