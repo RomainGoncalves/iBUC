@@ -48,9 +48,13 @@ angular.module('starter', ['ionic', 'firebase'])
           url: "/firebase",
           templateUrl: "templates/firebase.html",
           controller: "firebaseCtrl"
+        }).
+        state('consigns', {
+          url: '/consigns',
+          templateUrl: 'templates/consigns.html'
         });
 
         // if none of the above states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/consigns');
 
   });
