@@ -29,22 +29,6 @@ angular.module('starter', ['ionic'])
         // Each state's controller can be found in controllers.js
         $stateProvider
 
-<<<<<<< Updated upstream
-      // setup an abstract state for the tabs directive
-      .state('home', {
-        url: "/home",
-        templateUrl: "templates/home.html"
-      }).
-      state('settings', {
-        url: "/settings",
-        templateUrl: "templates/settings.html"
-      }).
-      state('profile', {
-        url: "/profile",
-        templateUrl: "templates/profile.html"
-      })
-      ;
-=======
             // setup an abstract state for the tabs directive
             .state('home', {
                 url: "/home",
@@ -54,8 +38,11 @@ angular.module('starter', ['ionic'])
                 url: "/settings",
                 templateUrl: "templates/settings.html",
                 controller: "settingsCtrl"
+            }).
+            state('profile', {
+                url: "/profile",
+                templateUrl: "templates/profile.html"
             });
->>>>>>> Stashed changes
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/home');
