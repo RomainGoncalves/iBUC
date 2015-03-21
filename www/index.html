@@ -15,11 +15,27 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <!-- firebase -->
+    <script src="lib/firebase/firebase.js"></script>
+    <script src="lib/angularfire/dist/angularfire.min.js"></script>
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+<<<<<<< HEAD
+=======
+
+    <!-- controllers -->
+    <script src="js/controllers/homeCtrl.js"></script>
+    <script src="js/controllers/settingsCtrl.js"></script>
+    <script src="js/controllers/firebaseCtrl.js"></script>
+
+    <!-- services -->
+    <script src="js/services/resultsAnalysisService.js"></script>
+    <script src="js/services/dataReferenceManagementService.js"></script>
+>>>>>>> 3d316d5e9b7d1b8fc9e2bef9de6e4212ad18bb16
 </head>
 <body ng-app="starter">
 <!--
@@ -41,15 +57,11 @@
             <i class="icon ion-person"></i>
             Profile
         </a>
-        <a class="tab-item" ui-sref-active="active" href="#">
-            <i class="icon ion-star"></i>
-            Favorites
-        </a>
         <a class="tab-item" ui-sref-active="active" ui-sref="settings">
             <i class="icon ion-gear-a"></i>
             Settings
         </a>
-        
+
     </div>
 </div>
 
