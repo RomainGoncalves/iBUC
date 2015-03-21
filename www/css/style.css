@@ -13,7 +13,11 @@ body {
 .item-header-color {
   /*  border-top-right-radius: 10px;
    border-top-left-radius: 10px;*/
-  background-color: #1C8B6E; }
+  background-color: #1C8B6E;
+  padding-left: 20px;
+  padding-top: 18px; }
+  .item-header-color h2 {
+    font-size: 1.8em; }
 
 .item-title-color {
   color: white; }
