@@ -6,6 +6,7 @@ angular.module('starter').service('dataReferenceManagementService', [function() 
   var dataReferenceBase = new Firebase("'https'://ipipi.firebaseio.com/data-reference");
 
   this.pushDataSet = function(set) {
+    dataReferenceBase.remove();
     dataReferenceBase.push(set);
   };
 
