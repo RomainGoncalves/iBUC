@@ -1,23 +1,71 @@
 {
-  "glucose": {
-    "icon": "./img/spermatozoide.png",
-    "header": "Ovulation",
-    "title": "Conception J-3",
+  "glucosePositive": {
+    "icon": "./img/sucre.png",
+    "header": "Sucre",
+    "title": "Risque de diabète",
+    "paragraph": "Nous avons identifié du sucre dans vos urines. Il faut surveiller la potentielle apparition d'un diabète.",
     "subTitle": "Le conseil du médecin",
-    "text": "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
+    "text": "Il est nécessaire que vous consultiez un médecin en l'informant que vous avez du sucre dans vos urines."
   },
-  "ketone": {
-    "icon": "./img/spermatozoide.png",
-    "header": "Ovulation",
-    "title": "Conception J-3",
+  "ketonePositive": {
+    "icon": "./img/sucre.png",
+    "header": "Diabète",
+    "title": "Risque de diabète",
+    "paragraph": "Nous avons identifié un risque de diabète dans vos urines. Il faut surveillier la potentielle apparition d'un diabète.",
     "subTitle": "Le conseil du médecin",
-    "text": "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
+    "text": "Il est nécessaire que vous consultiez un médecin en l'informant que vous avez du sucre dans vos urines."
   },
-  "LH": {
+  "LHPositive": {
     "icon": "./img/spermatozoide.png",
     "header": "Ovulation",
     "title": "Conception J-3",
+    "paragraph": "C’est dans 3 jours que vos chances de tomber enceinte sont les plus grandes. C’est à vous de jouer !",
     "subTitle": "Le conseil du médecin",
-    "text": "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
-  }
+    "text": "Essayez d'éviter les sources de stress pour optimiser vos chances."
+  },
+  "HCGPositive": {
+    "icon": "./img/cigogne.png",
+    "header": "Grossesse",
+    "title": "Il est possible que vous soyez enceinte",
+    "paragraph": "Aujourd’hui, vos analyses annoncent peut-être une bonne nouvelle ! Une consultation auprès de votre médecin est nécessaire.",
+    "subTitle": "Le conseil du médecin",
+    "text": "Pour confirmer une grossesse, il est nécessaire de faire des tests complémentaires avec un médecin. Prenez vite rendez-vous chez votre généraliste."
+  },
+    "leucocytesPositive": {
+    "icon": "./img/infectionUrinaire.png",
+    "header": "Infection urinaire",
+    "title": "Attention à l'infection !",
+    "paragraph": "Il semblerait que vous ayez un début d’infection urinaire.",
+    "subTitle": "Le conseil du médecin",
+    "text": "Il est conseillé aux futures mamans de boire au moins 2 litres d’eau par jour et d’éviter les aliments qui irritent la vessie (café, mets épicés). Essayez aussi le jus de cranberry, connu pour diminuer la fréquence des infections urinaires. N’hésitez pas à consulter un médecin."
+  },
+
+
+
+
+
+  "glucoseNegative": {
+    "icon": "./img/sucre.png",
+    "header": "Sucre",
+    "title": "Pas de diabète en vue",
+    "paragraph": "Il n’y a pas de trace de sucre dans vos urines aujourd’hui, c'est bon signe !",
+    "subTitle": "Le conseil du médecin",
+    "text": "Pour garder le diabète à distance, pensez à faire du sport et à manger équilibré au quotidien."
+  },
+  "ketoneNegative": {
+    "icon": "./img/sucre.png",
+    "header": "Diabète",
+    "title": "Pas de diabète en vue",
+    "paragraph": "Il n’y a pas de trace de sucre dans vos urines aujourd’hui, c'est bon signe !",
+    "subTitle": "Le conseil du médecin",
+    "text": "Pour garder le diabète à distance, pensez à faire du sport et à manger équilibré au quotidien."
+  },
+  "leucocytesNegative": {
+    "icon": "./img/infectionUrinaire.png",
+    "header": "Infection urinaire",
+    "title": "Pas d’infection urinaire en vue",
+    "paragraph": "Vos analyses ne présentent pas de signe d’infection urinaire aujourd’hui.",
+    "subTitle": "Le conseil du médecin",
+    "text": "Pour éviter les infections urinaires, essayez le jus de cranberry."
+  },
 }
