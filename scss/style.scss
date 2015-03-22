@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5 {
   background-color: #F1C40F;
   padding-left: 20px;
   padding-top: 18px;
+  padding-bottom: 31px;
 }
 
 .item-header-color h2 {
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5 {
   top: -50px;
   position: relative;
   z-index: 10;
-  width: 100px;
+  width: 80px;
   right: 30px;
 }
 
@@ -133,9 +134,4 @@ button {
   .item-header-color {
     background-color: #f39c12;
   }
-}
-
-button.questionButton{
-  font-weight: bold;
-  color: #f39c12;
 }
