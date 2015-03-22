@@ -21,6 +21,7 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+    <script src="cordova_plugins.js"></script>
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
@@ -51,5 +52,43 @@
 -->
 <ion-nav-view class="has-header">
 </ion-nav-view>
+<script>
+
+function initPushwoosh()
+{
+    console.log("initPushwoosh() called.");
+
+    var pushNotification = window.plugins.pushNotification;
+
+    //set push notifications handler
+    document.addEventListener('push-notification', function(event) {
+        var title = event.notification.title;
+        var userData = event.notification.userdata;
+
+        if(typeof(userData) != "undefined") {
+            console.warn('user data: ' + JSON.stringify(userData));
+        }
+
+        alert(title);
+    });
+
+    //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
+    pushNotification.onDeviceReady({ projectid: "396380511100", pw_appid : "69F35-4C4AB" });
+
+    //register for pushes
+    pushNotification.registerDevice(
+        function(status) {
+            var pushToken = status;
+            console.warn('push token: ' + pushToken);
+        },
+        function(status) {
+            console.warn(JSON.stringify(['failed to register ', status]));
+        }
+    );
+}
+
+document.addEventListener('deviceready', initPushwoosh, false);
+
+</script>
 </body>
 </html>
