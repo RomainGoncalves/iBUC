@@ -16,6 +16,10 @@ angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', '
 			$scope.results = _.uniq(_.flatten($scope.results));
 
 			console.log($scope.results);
+			
+			if(_.findWhere($scope.results, 'leucocytesPositive')){
+				$state.go('questions');
+			}
 
 		});
 	});

@@ -66,8 +66,24 @@ angular.module('starter', ['ionic', 'firebase', 'ngCordova'])
 				url: "/ovulation",
 				templateUrl: "templates/ovulation.html",
 				controller: function(){
-					console.log( "ovulation" );
 				}
+			})
+			.state('questions', {
+				url: "/questions",
+				templateUrl: "templates/questions.html",
+				controller: ['$scope', '$state', function($scope, $state){
+					$scope.symptom = {
+						"icon": "./img/questions.png",
+						"header": "Questions",
+						"title": "Une petite précision...",
+						"paragraph": "Avez-vous envie d’uriner plus souvent ? Uriner vous brûle t-il ?",
+						"text": "<button>OUi</button>"
+					};
+
+					$scope.goTo = function(route){
+						$state.go(route);
+					};
+				}]
 			});
 
 		// if none of the above states are matched, use this as the fallback

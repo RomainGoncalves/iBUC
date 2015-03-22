@@ -12,7 +12,12 @@
 
 			<display-symptom display="{{result}}"
 			                 symptom="{{cards[result]}}"
-			                 ng-if="result != 'LHPositive'"></display-symptom>
+			                 ng-if="result != 'LHPositive' && result != 'leucocytesPositive'"></display-symptom>
+
+			<display-symptom display="{{result}}"
+			                 symptom="{{cards[result]}}"
+			                 ng-if="result == 'leucocytesPositive'"
+											 ng-click="goTo('questions')"></display-symptom>
 
 		</div>
 	</div>

@@ -99,3 +99,6 @@ button {
 
 .LHPositive .item-header-color {
   background-color: #f39c12; }
+
+button.questionButton:focus {
+  background-color: #F1C40F; }
