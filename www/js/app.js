@@ -64,7 +64,7 @@ angular.module('starter', ['ionic', 'firebase', 'ngCordova'])
 			})
 			.state('ovulation', {
 				url: "/ovulation",
-				template: "<div></div>",
+				templateUrl: "templates/ovulation.html",
 				controller: function(){
 					console.log( "ovulation" );
 				}
