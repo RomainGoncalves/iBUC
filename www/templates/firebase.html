@@ -1,3 +1,4 @@
+<ion-content>
 <div ng-repeat="item in fakeCases">
   <button ng-click="addData($index)">add fake case {{ $index }}</button>
 </div>
@@ -7,3 +8,4 @@
 <div ng-repeat="item in dataReference">
   <button ng-click="remove(item.key())">remove</button> {{ item.val() }}
 </div>
+</ion-content>
