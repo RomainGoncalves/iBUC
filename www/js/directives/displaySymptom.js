@@ -5,7 +5,6 @@ angular.module('starter').directive('displaySymptom', [function() {
         restrict: 'EA',
         templateUrl: 'templates/displaySymptoms.html',
         link: function(scope) {
-            console.log(scope);
         }
     };
 }]);

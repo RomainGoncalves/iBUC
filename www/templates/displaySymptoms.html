@@ -1,15 +1,15 @@
 <div class="card">
     <div class="item item-avatar item-header-color">
-        <h2 class="item-title-color">Ovulation</h2>
+        <h2 class="item-title-color">{{ symptom.header }}</h2>
     </div>
 
-    <img class="item-title-img-padding" src="./img/spermatazoide.png">
+    <img class="item-title-img-padding" ng-src="{{ symptom.icon }}">
 
     <div class="item item-body" style="width: 100%;top: -95px;">
-        <h1 class="item-body-color pading-head-title">Conception : J-3</h1>
+        <h1 class="item-body-color pading-head-title">{{ symptom.title }}</h1>
 
-        <h2>Le conseil du médecin</h2>
+        <h2>{{ symptom.subTitle }}</h2>
 
-        <p>C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !</p>
+        <p>{{ symptom.text }}</p>
     </div>
 </div>

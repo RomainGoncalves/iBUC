@@ -1,11 +1,12 @@
 <ion-content>
-    <div>
+	<div>
 
-        <div>
-            <a ui-sref="profile"><img class="full-image " src="./img/status/statusOK.png"></a>
-        </div>
-        <display-symptom></display-symptom>
-
-    </div>
+		<div>
+			<a ui-sref="profile"><img class="full-image " src="./img/status/statusOK.png"></a>
+		</div>
+		<div ng-repeat="result in results">
+			<display-symptom ng-repeat="symptom in symptoms"></display-symptom>
+		</div>
+	</div>
 
 </ion-content>
