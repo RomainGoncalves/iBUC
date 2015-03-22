@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', 'dataReferenceManagementService', 'resultAnalysisService', '$http', function($scope, $firebaseObject, dataReferenceManagementService, analysisService, $http) {
+angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', 'dataReferenceManagementService', 'resultAnalysisService', '$http', '$state', function($scope, $firebaseObject, dataReferenceManagementService, analysisService, $http, $state) {
 
 	$firebaseObject(dataReferenceManagementService.getReference());
 
@@ -24,5 +24,8 @@ angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', '
 		});
 	});
 
+	$scope.goTo = function(route){
+		$state.go(route);
+	};
 
 }]);

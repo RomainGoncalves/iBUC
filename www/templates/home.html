@@ -5,7 +5,10 @@
 			<a ui-sref="profile"><img class="full-image " src="./img/status/statusOK.png"></a>
 		</div>
 		<div ng-repeat="result in results">
-			<display-symptom symptom="{{cards[result]}}" ng-if="cards[result]"></display-symptom>
+			<display-symptom symptom="{{cards[result]}}" ng-if="cards[result]" ng-if="result == LH" ng-click="goTo('ovulation')"></display-symptom>
+
+			<display-symptom symptom="{{cards[result]}}" ng-if="cards[result]" ng-if="result != LH"></display-symptom>
+
 		</div>
 	</div>
 
