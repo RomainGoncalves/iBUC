@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', "sans-serif"; }
 
 body {
   font-family: 'Source Sans Pro', "sans-serif"; }
@@ -45,11 +45,19 @@ h1, h2, h3, h4, h5 {
   right: 30px; }
 
 .item-body h1 {
-  font-size: 30px; }
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold; }
 .item-body h2 {
-  font-size: 21px; }
+  font-size: 21px;
+  margin-bottom: 6px;
+  margin-top: 40px;
+  font-weight: bold; }
 .item-body p {
-  font-size: 16px; }
+  font-size: 22px;
+  line-height: 22px;
+  margin-top: 6px; }
 .item-body ul li {
   font-size: 21px; }
 
