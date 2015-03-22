@@ -100,3 +100,11 @@ button {
 
 .LHPositive .item-header-color {
   background-color: #f39c12; }
+
+.checkbox input:before, .checkbox-icon:before {
+  border-radius: 0; }
+
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+  background: #F1C40F;
+  border-color: #F1C40F;
+  border-radius: 0; }
