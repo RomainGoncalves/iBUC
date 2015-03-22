@@ -14,6 +14,9 @@ angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', '
 		$scope.dataReference.splice($scope.dataReference.indexOf(snapshot), 1);
 	});
 
+	$http.get('./json/cardHolder.json').then(function(cards){
+		$scope.cards = cards.data;
+	});
 
 	$http.get('./json/references.json').then(function(references) {
 		$http.get('./json/fakeData.json').then(function(data) {
@@ -21,28 +24,5 @@ angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', '
 		});
 	});
 
-	$scope.symptoms = {
-		glucose: {
-			icon: '../img/spermatozoide.png',
-			header: "Ovulation",
-			title: "Conception : J-3",
-			subTitle: "Le conseil du médecin",
-			text: "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
-		},
-		ketone: {
-			icon: '../img/spermatozoide.png',
-			header: "Ovulation",
-			title: "Conception : J-3",
-			subTitle: "Le conseil du médecin",
-			text: "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
-		},
-		LH: {
-			icon: '../img/spermatozoide.png',
-			header: "Ovulation",
-			title: "Conception : J-3",
-			subTitle: "Le conseil du médecin",
-			text: "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
-		}
-	};
 
 }]);

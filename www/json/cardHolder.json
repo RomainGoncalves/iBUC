@@ -1,0 +1,23 @@
+{
+  "glucose": {
+    "icon": "../img/spermatozoide.png",
+    "header": "Ovulation",
+    "title": "Conception J-3",
+    "subTitle": "Le conseil du médecin",
+    "text": "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
+  },
+  "ketone": {
+    "icon": "../img/spermatozoide.png",
+    "header": "Ovulation",
+    "title": "Conception J-3",
+    "subTitle": "Le conseil du médecin",
+    "text": "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
+  },
+  "LH": {
+    "icon": "../img/spermatozoide.png",
+    "header": "Ovulation",
+    "title": "Conception J-3",
+    "subTitle": "Le conseil du médecin",
+    "text": "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
+  }
+}
