@@ -7,7 +7,7 @@ body {
   background-color: #27ae60;
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5 {
   font-family: 'Source Sans Pro', "sans-serif";
 }
 
@@ -56,15 +56,16 @@ h1, h2, h3, h4, h5{
   width: 100px;
   right: 30px;
 }
-.item-body{
-  h1{
+
+.item-body {
+  h1 {
     margin-top: 10px;
     font-size: 30px;
     text-align: center;
     font-weight: bold;
   }
 
-  h2{
+  h2 {
 
     font-size: 21px;
     margin-bottom: 6px;
@@ -72,14 +73,14 @@ h1, h2, h3, h4, h5{
     font-weight: bold;
   }
 
-  p{
+  p {
     font-size: 22px;
     line-height: 22px;
     margin-top: 6px;
   }
 
-  ul{
-    li{
+  ul {
+    li {
       font-size: 21px;
     }
   }
@@ -94,8 +95,31 @@ h1, h2, h3, h4, h5{
   color: #1C8B6E;
 }
 
-.ovulation{
+.ovulation {
   width: 95%;
   display: block;
   margin: 20px auto auto;
+}
+
+button {
+  display: block;
+  padding: 30px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-size: 26px;
+  background-color: white;
+  border: 3px solid #f39c12;
+  border-radius: 20px;
+}
+
+.around-button {
+  padding: 10px;
+}
+
+.button-link {
+  text-decoration: none;
+  color: #f39c12;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

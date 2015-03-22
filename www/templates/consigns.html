@@ -1,16 +1,19 @@
-<ion-content>
-    <div class="list list-inset">
-        <div class="item">
-            Avez-vous laver vos mains?
-        </div>
-        <div class="item">
-            Avez-vous manipule du sucre?
-        </div>
-        <div class="item">
-            Avez-vous mis vos doigts dans le cul de quelqu'un?
-        </div>
-    </div>
+<ion-content class="has-header">
+	<div>
+		<a ui-sref="home"><img class="full-image" src="./img/status/statusOK.png"></a>
+	</div>
 
-    <a class="button button-outline icon-right ion-navicon button-balanced pull-right" style="float: right;margin-right: 10px;" ng-click="toHome()">Kwel</a>
+	<div class="card">
+
+		<div class="item item-avatar item-header-color">
+			<h2 class="item-title-color">Consignes</h2>
+		</div>
+		<img src="./img/consignes.png" alt="consignes" style="width:82%; display: block; margin: 20px auto auto"/>
+
+		<button class="around-button button-link"
+		   ng-click="toHome()">J'ai compris</button>
+
+	</div>
+
 
 </ion-content>
