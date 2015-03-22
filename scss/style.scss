@@ -1,38 +1,54 @@
-body{
+@font-face {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
   padding-top: 40px;
+  font-family: 'Source Sans Pro', "sans-serif";
 }
 
-.padding-status{
+h1, h2, h3, h4, h5{
+  font-family: 'Source Sans Pro', "sans-serif";
 }
 
-.status-image{
-  opacity: 0.6;
-}
-
-.pading-head-title{
-  padding-top: 30px;
-}
-
-.small-padding-bottom{
-  padding-bottom: 50px;
-}
-
-.item-header-color{
-  /*  border-top-right-radius: 10px;
-   border-top-left-radius: 10px;*/
-  background-color: #1C8B6E;
-  padding-left: 20px;
-  padding-top: 18px;
-  h2{
-    font-size: 1.8em;
-  }
-}
-
-.item-title-color{
+.bar-color {
+  background-color: #2ECC71;
   color: white;
 }
 
-.item-title-img-padding{
+.border-card {
+  border-width: 10px;
+}
+
+.status-image {
+  opacity: 0.6;
+}
+
+.pading-head-title {
+  padding-top: 30px;
+}
+
+.small-padding-bottom {
+  padding-bottom: 50px;
+}
+
+.item-header-color {
+  /*  border-top-right-radius: 10px;
+   border-top-left-radius: 10px;*/
+  background-color: #F1C40F;
+  padding-left: 20px;
+  padding-top: 18px;
+}
+
+.item-header-color h2 {
+  font-size: 1.8em;
+}
+
+.item-title-color {
+  color: white;
+}
+
+.item-title-img-padding {
   float: right;
   top: -50px;
   position: relative;
@@ -40,13 +56,22 @@ body{
   width: 100px;
   right: 30px;
 }
+.item-body{
+  h1{
+    font-size: 30px;
+  }
+  ul{
+    li{
+      font-size: 21px;
+    }
+  }
+}
 
-
-.item-body-border{
+.item-body-border {
   border-color: #1C8B6E;
   border-width: 5px;
 }
 
-.item-body-color{
+.item-body-color {
   color: #1C8B6E;
 }

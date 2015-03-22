@@ -1,29 +1,20 @@
+@font-face {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 body {
-  padding-top: 40px; }
+  padding-top: 40px;
+  font-family: 'Source Sans Pro', "sans-serif"; }
 
-@font-face{
-  font-family: 'Source Sans Pro', sans-serif;
-}
+h1, h2, h3, h4, h5 {
+  font-family: 'Source Sans Pro', "sans-serif"; }
 
- h3, p {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-h1{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 175%;
-}
-
-.bar-color{
+.bar-color {
   background-color: #2ECC71;
-  color: white;
+  color: white; }
 
-}
+.border-card {
+  border-width: 10px; }
 
-
-}.border-card{
-  border-width: 10px;
-}
 .status-image {
   opacity: 0.6; }
 
@@ -39,8 +30,9 @@ h1{
   background-color: #F1C40F;
   padding-left: 20px;
   padding-top: 18px; }
-  .item-header-color h2 {
-    font-size: 1.8em; }
+
+.item-header-color h2 {
+  font-size: 1.8em; }
 
 .item-title-color {
   color: white; }
@@ -52,6 +44,11 @@ h1{
   z-index: 10;
   width: 100px;
   right: 30px; }
+
+.item-body h1 {
+  font-size: 30px; }
+.item-body ul li {
+  font-size: 21px; }
 
 .item-body-border {
   border-color: #1C8B6E;
