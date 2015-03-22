@@ -15,15 +15,27 @@ angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', '
 	});
 
 
-	$http.get('./json/references.json').then(function(references){
-		$http.get('./json/fakeData.json').then(function(data){
-			_.each(data.data, function(row){
-				$scope.results = analysisService.analyse(references.data, row);
-			});
+	$http.get('./json/references.json').then(function(references) {
+		$http.get('./json/fakeData.json').then(function(data) {
+			$scope.results = analysisService.analyse(references.data, data.data[0]);
 		});
 	});
 
-	$scope.symptoms = [{
+	$scope.symptoms = {
+		glucose: {
+			icon: '../img/spermatozoide.png',
+			header: "Ovulation",
+			title: "Conception : J-3",
+			subTitle: "Le conseil du médecin",
+			text: "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
+		},
+		ketone: {
+			icon: '../img/spermatozoide.png',
+			header: "Ovulation",
+			title: "Conception : J-3",
+			subTitle: "Le conseil du médecin",
+			text: "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
+		},
 		LH: {
 			icon: '../img/spermatozoide.png',
 			header: "Ovulation",
@@ -31,6 +43,6 @@ angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', '
 			subTitle: "Le conseil du médecin",
 			text: "C'est dans 3 jours que vos chances de tomber enceinte seront les plus grandes. Amusez-vous bien !"
 		}
-	}];
+	};
 
 }]);

@@ -8,7 +8,7 @@
 angular.module('starter', ['ionic', 'firebase', 'ngCordova'])
 
     .run(function($ionicPlatform, $cordovaSplashscreen) {
-        $cordovaSplashscreen.show();
+        //$cordovaSplashscreen.show();
         $ionicPlatform.ready(function() {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
@@ -20,7 +20,7 @@ angular.module('starter', ['ionic', 'firebase', 'ngCordova'])
                 StatusBar.styleDefault();
             }
 
-            $cordovaSplashscreen.hide();
+            //$cordovaSplashscreen.hide();
 
         });
     })
