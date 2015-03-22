@@ -123,3 +123,14 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.glucoseNegative, .leucocytesNegative{
+  .item-header-color {
+    background-color: #27ae60;
+  }
+}
+.LHPositive{
+  .item-header-color {
+    background-color: #f39c12;
+  }
+}

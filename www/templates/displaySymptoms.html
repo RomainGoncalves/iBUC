@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card {{ symptom.display }}">
 		<div class="item item-avatar item-header-color">
 			<h2 class="item-title-color">{{ symptom.header }}</h2>
 		</div>
@@ -7,6 +7,8 @@
 
 		<div class="item item-body" style="width: 100%;top: -95px;">
 			<h1 class="item-body-color pading-head-title">{{ symptom.title }}</h1>
+
+			<p>{{ symptom.paragraph }}</p>
 
 			<h2>{{ symptom.subTitle }}</h2>
 

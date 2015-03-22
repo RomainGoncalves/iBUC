@@ -93,3 +93,9 @@ button {
   color: #f39c12;
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.glucoseNegative .item-header-color, .leucocytesNegative .item-header-color {
+  background-color: #27ae60; }
+
+.LHPositive .item-header-color {
+  background-color: #f39c12; }

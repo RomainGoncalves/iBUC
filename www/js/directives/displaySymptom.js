@@ -4,7 +4,8 @@ angular.module('starter').directive('displaySymptom', [function() {
 	return {
 		restrict: 'EA',
 		scope: {
-			symptom: "@"
+			symptom: "@",
+			display: '@'
 		},
 		templateUrl: 'templates/displaySymptoms.html',
 		link: function(scope) {
@@ -12,6 +13,12 @@ angular.module('starter').directive('displaySymptom', [function() {
 			scope.$watch('symptom', function(val){
 				if(typeof val === "string"){
 					scope.symptom = JSON.parse(val);
+				}
+			});
+
+			scope.$watch('display', function(val){
+				if(typeof val === "string"){
+					scope.symptom.display = val;
 				}
 			});
 		}
