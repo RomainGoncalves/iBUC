@@ -135,6 +135,7 @@ button {
   }
 }
 
-button.questionButton:focus{
-  background-color: #F1C40F;
+button.questionButton{
+  font-weight: bold;
+  color: #f39c12;
 }

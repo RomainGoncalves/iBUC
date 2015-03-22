@@ -11,15 +11,16 @@ angular.module('starter').controller('homeCtrl', ['$scope', '$firebaseObject', '
 		$scope.dataReference.unshift(snapshot);
 		$http.get('./json/references.json').then(function(references) {
 			$scope.results = [];
+			$scope.error = false;
 			$scope.results.unshift(analysisService.analyse(references.data, snapshot.val()));
 
 			$scope.results = _.uniq(_.flatten($scope.results));
 
-			console.log($scope.results);
-			
 			if(_.findWhere($scope.results, 'leucocytesPositive')){
 				$state.go('questions');
 			}
+
+			$scope.error = (_.findWhere($scope.results, 'leucocytesPositive') || _.findWhere($scope.results, 'glucosePositive')) ? true : false;
 
 		});
 	});

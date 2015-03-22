@@ -1,8 +1,11 @@
 <ion-content>
 	<div>
 
-		<div>
-			<a ui-sref="profile"><img class="full-image " src="./img/status/statusOK.png"></a>
+		<div ng-if="error">
+			<a ui-sref="profile"><img class="full-image" src="./img/status/statusProblem.png"></a>
+		</div>
+		<div ng-if="!error">
+			<a ui-sref="profile"><img class="full-image" src="./img/status/statusOK.png"></a>
 		</div>
 		<div ng-repeat="result in results">
 			<display-symptom display="{{result}}"
