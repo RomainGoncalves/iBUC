@@ -6,7 +6,8 @@
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic,900'
+          rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -40,58 +41,44 @@
     <script src="js/directives/displaySymptom.js"></script>
 </head>
 <body ng-app="starter">
-<!--
-  The nav bar that will be updated as we navigate between views.
--->
-<ion-nav-bar class="bar bar-header bar-color" title="iBUC">
-    <ion-nav-back-button>
-    </ion-nav-back-button>
-    <ion-nav-title>iPipi</ion-nav-title>
-</ion-nav-bar>
 
-<!--
-  The views will be rendered in the <ion-nav-view> directive below
-  Templates are in the /templates folder (but you could also
-  have templates inline in this html file if you'd like).
--->
 <ion-nav-view class="has-header">
 </ion-nav-view>
 <script>
 
-function initPushwoosh()
-{
-    console.log("initPushwoosh() called.");
+    function initPushwoosh() {
+        console.log("initPushwoosh() called.");
 
-    var pushNotification = window.plugins.pushNotification;
+        var pushNotification = window.plugins.pushNotification;
 
-    //set push notifications handler
-    document.addEventListener('push-notification', function(event) {
-        var title = event.notification.title;
-        var userData = event.notification.userdata;
+        //set push notifications handler
+        document.addEventListener('push-notification', function(event) {
+            var title = event.notification.title;
+            var userData = event.notification.userdata;
 
-        if(typeof(userData) != "undefined") {
-            console.warn('user data: ' + JSON.stringify(userData));
-        }
+            if(typeof(userData) != "undefined"){
+                console.warn('user data: ' + JSON.stringify(userData));
+            }
 
-        alert(title);
-    });
+            alert(title);
+        });
 
-    //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
-    pushNotification.onDeviceReady({ projectid: "396380511100", pw_appid : "69F35-4C4AB" });
+        //initialize Pushwoosh with projectid: "GOOGLE_PROJECT_NUMBER", pw_appid : "PUSHWOOSH_APP_ID". This will trigger all pending push notifications on start.
+        pushNotification.onDeviceReady({projectid: "396380511100", pw_appid: "69F35-4C4AB"});
 
-    //register for pushes
-    pushNotification.registerDevice(
-        function(status) {
-            var pushToken = status;
-            console.warn('push token: ' + pushToken);
-        },
-        function(status) {
-            console.warn(JSON.stringify(['failed to register ', status]));
-        }
-    );
-}
+        //register for pushes
+        pushNotification.registerDevice(
+                function(status) {
+                    var pushToken = status;
+                    console.warn('push token: ' + pushToken);
+                },
+                function(status) {
+                    console.warn(JSON.stringify(['failed to register ', status]));
+                }
+        );
+    }
 
-document.addEventListener('deviceready', initPushwoosh, false);
+    document.addEventListener('deviceready', initPushwoosh, false);
 
 </script>
 </body>
