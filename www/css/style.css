@@ -1,10 +1,25 @@
 body {
   padding-top: 40px; }
 
-.bar-color{
-  background-color: #1C8B6E;
-  color: white;
+@font-face{
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+ h3, p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 175%;
+}
+
+.bar-color{
+  background-color: #2ECC71;
+  color: white;
+
+}
+
 
 }.border-card{
   border-width: 10px;
@@ -21,7 +36,7 @@ body {
 .item-header-color {
   /*  border-top-right-radius: 10px;
    border-top-left-radius: 10px;*/
-  background-color: #1C8B6E;
+  background-color: #F1C40F;
   padding-left: 20px;
   padding-top: 18px; }
   .item-header-color h2 {
